@@ -1,0 +1,33 @@
+<Html> <!-- This tag is compulsory for any HTML document. -->
+<Head>  
+<!-- The Head tag is used to create a title of web page, CSS syntax for a web page, and helps in written a JavaScript code. -->  
+<script>
+function save() {
+   var data = {
+               sSearchStatCode : "sSearchStatCode",
+               sAcctAddrCity : "sAcctAddrCity",
+               sAcctAddrCounty : "sAcctAddrCounty",
+               sAcctAddrTown : "sAcctAddrTown",
+               sAcctAddrDetail : "sAcctAddrDetail",
+               sAcctAddr2 : "sAcctAddr2",
+               sAcctLatitude : "sAcctLatitude",
+               sAcctLongitude : "sAcctLongitude",
+               sAcctAddrZip1 : "sAcctAddrZip1",
+               sAcctAddrZip2 : "sAcctAddrZip2",
+               sVillageInLaw : "sVillageInLaw",
+               sSearchAgreeYn : "sSearchAgreeYn",
+               sSearchYn : "sSearchYn"
+   };
+   var param = {
+               screenid : 'screenid',
+               inData : data
+   };
+   location.href="rbi-postto://post?" + "GIS_SV_INFO=" + JSON.stringify(param);
+}
+</script>
+</Head>
+<Body>
+<!-- The Body tag is used to display the content on a web page. In this example we do not specify any content or any tag, so in output nothing will display on the web page. -->
+<button onclick="save()">save</button>
+</Body>
+</Html>
