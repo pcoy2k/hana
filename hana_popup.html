@@ -22,6 +22,7 @@ function save() {
                screenid : 'screenid',
                inData : data
    };
+   console.log("rbi-postto://post?" + "GIS_SV_INFO=" + JSON.stringify(param));
    location.href="rbi-postto://post?" + "GIS_SV_INFO=" + JSON.stringify(param);
 }
 </script>
